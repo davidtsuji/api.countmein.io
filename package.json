@@ -1,0 +1,31 @@
+{
+	"name": "countmein-api",
+	"version": "0.0.0",
+	"description": "",
+	"main": "app/server/index.js",
+	"scripts": {
+		"test": "./node_modules/.bin/mocha",
+		"start": "node app/server/index.js"
+	},
+	"author": "David Tsuji",
+	"contributors": [{
+		"name": "Glen Arrowsmith",
+		"email": "glen.arrowsmith@gmail.com",
+		"url": "http://garrows.com/"
+	}],
+	"license": "MIT",
+	"devDependencies": {
+		"forever": "^0.10.11",
+		"gulp": "^3.5.6",
+		"should": "^3.1.4",
+		"mocha": "^1.18.2",
+		"gulp-shell": "^0.2.4"
+	},
+	"dependencies": {
+		"klass": "^1.4.0",
+		"express": "^3.4.8",
+		"sg-model": "0.0.4",
+		"sc-guid": "0.0.4",
+		"MD5": "^1.2.0"
+	}
+}
