@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
 	cluster = require('cluster'),
-	shell = require('gulp-shell'),
-	path = require('path');
+	shell = require('gulp-shell');
 
 var worker;
 
@@ -21,9 +20,6 @@ gulp.task('server', function () {
 });
 
 gulp.task('watch', function () {
-
-	livereloadServer = require('gulp-livereload')();
-
 	gulp.watch(['./test/**/*'], ['test']);
 	gulp.watch(['./app/server/**/*'], ['server']);
 	gulp.watch(['./gulpfile.js'], ['default']);
