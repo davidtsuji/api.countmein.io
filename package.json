@@ -13,6 +13,10 @@
 		"email": "glen.arrowsmith@gmail.com",
 		"url": "http://garrows.com/"
 	}],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/davidtsuji/api.countmein.io"
+	},
 	"license": "MIT",
 	"devDependencies": {
 		"forever": "^0.10.11",
