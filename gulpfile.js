@@ -20,6 +20,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('watch', function () {
+	gulp.watch(['./app/server/**/*'], ['test']);
 	gulp.watch(['./test/**/*'], ['test']);
 	gulp.watch(['./app/server/**/*'], ['server']);
 	gulp.watch(['./gulpfile.js'], ['default']);

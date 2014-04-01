@@ -1,0 +1,38 @@
+{
+	"properties": {
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"date": {
+			"type": "string",
+			"default": ""
+		},
+		"time": {
+			"type": "string",
+			"default": ""
+		},
+		"where": {
+			"type": "string",
+			"default": ""
+		},
+		"organiserName": {
+			"type": "string",
+			"default": ""
+		},
+		"guests": [{
+			"keyless": true,
+			"properties": {
+				"name": "string",
+				"email": "string",
+				"attending": {
+					"type": "boolean",
+					"default": false
+				}
+			}
+		}],
+		"createdAt": {
+			"type": "string"
+		}
+	}
+}

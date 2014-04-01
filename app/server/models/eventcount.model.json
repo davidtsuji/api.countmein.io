@@ -1,0 +1,8 @@
+{
+	"properties": {
+		"total": {
+			"type": "number",
+			"default": 0
+		}
+	}
+}
