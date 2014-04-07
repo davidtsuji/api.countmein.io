@@ -1,21 +1,20 @@
-var cmi = require('../cmi');
+var app = require('../app');
 
-module.exports = cmi.class.route.extend(function () {
+module.exports = app.class.route.extend({
 
-}).methods({
-
-	get: function (_req, _res) {
-		var data = new cmi.model.eventcount().model;
-
-		// Faux data 
-		data.id = cmi.helpers.uid();
-		data.total = 14;
-
-		_res.json(data.$json());
+	init: function () {
+		this._super();
+		this.name = 'eventcount';
 	},
 
-	schema: function (_req, _res) {
-		_res.json(require('../models/eventcount.model.json'));
+	get: function (_req, _res) {
+		var eventCount = new app.model.eventcount().model;
+
+		new app.model.event().model
+			.$collection(function (_error, _data) {
+				eventCount.total = !_error && _data && _data.length || 0;
+				_res.json(_error || eventCount.$json());
+			});
 	}
 
 });

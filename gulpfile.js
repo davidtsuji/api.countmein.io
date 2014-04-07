@@ -1,10 +1,18 @@
 var gulp = require('gulp'),
 	cluster = require('cluster'),
+	jshint = require('gulp-jshint'),
+	jshintReporter = require("jshint-stylish"),
 	shell = require('gulp-shell');
 
 var worker;
 
-gulp.task('test', shell.task([
+gulp.task("jshint", function () {
+	return gulp.src(["./app/server/**/*.js", "test/**/*.js"])
+		.pipe(jshint())
+		.pipe(jshint.reporter(jshintReporter));
+});
+
+gulp.task('test', ['jshint'], shell.task([
 	'npm test'
 ]));
 
@@ -27,4 +35,4 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['test']);
-gulp.task('run', ['server', 'watch']);
+gulp.task('run', ['default', 'server', 'watch']);

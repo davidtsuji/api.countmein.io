@@ -4,7 +4,7 @@ module.exports = app.class.route.extend({
 
 	init: function () {
 		this._super();
-		this.name = 'event';
+		this.name = 'guest';
 	},
 
 	post: function (_req, _res) {

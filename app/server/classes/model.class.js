@@ -1,7 +1,3 @@
-var cmi = require('../cmi');
+var app = require('../app');
 
-module.exports = cmi.class.base.extend(function () {
-
-}).methods({
-
-});
+module.exports = app.class.base.extend({});

@@ -19,7 +19,7 @@ app.use(cors());
 app.use(app.router);
 
 // development only
-if ('development' == app.get('env')) {
+if ('development' === app.get('env')) {
 	app.use(express.errorHandler());
 }
 

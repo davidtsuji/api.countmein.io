@@ -1,7 +1,9 @@
-var cmi = require('../cmi');
+var app = require('../app');
 
-module.exports = cmi.class.model.extend(function () {
+module.exports = app.class.model.extend({
 
-	this.model = new cmi.modules.model('event', require('./event.model.json'));
+	init: function () {
+		this.model = new app.modules.moldy('event', require('./event.model.json'));
+	}
 
 });

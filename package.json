@@ -1,36 +1,41 @@
 {
-	"name": "countmein-api",
-	"version": "0.0.0",
-	"description": "",
-	"main": "app/server/index.js",
-	"scripts": {
-		"test": "./node_modules/.bin/mocha",
-		"start": "node app/server/index.js"
-	},
-	"author": "David Tsuji",
-	"contributors": [{
-		"name": "Glen Arrowsmith",
-		"email": "glen.arrowsmith@gmail.com",
-		"url": "http://garrows.com/"
-	}],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/davidtsuji/api.countmein.io"
-	},
-	"license": "MIT",
-	"devDependencies": {
-		"forever": "^0.10.11",
-		"gulp": "^3.5.6",
-		"should": "^3.1.4",
-		"mocha": "^1.18.2",
-		"gulp-shell": "^0.2.4"
-	},
-	"dependencies": {
-		"klass": "^1.4.0",
-		"express": "^3.4.8",
-		"sc-guid": "0.0.4",
-		"MD5": "^1.2.0",
-		"cors": "^2.2.0",
-		"moldy": "0.0.x"
-	}
+  "name": "countmein-api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app/server/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "start": "node app/server/index.js"
+  },
+  "author": "David Tsuji",
+  "contributors": [
+    {
+      "name": "Glen Arrowsmith",
+      "email": "glen.arrowsmith@gmail.com",
+      "url": "http://garrows.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidtsuji/api.countmein.io"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "forever": "^0.10.11",
+    "gulp": "^3.5.6",
+    "should": "^3.1.4",
+    "mocha": "^1.18.2",
+    "gulp-shell": "^0.2.4",
+    "jshint-stylish": "^0.1.5",
+    "gulp-jshint": "^1.5.3"
+  },
+  "dependencies": {
+    "MD5": "^1.2.0",
+    "cors": "^2.2.0",
+    "express": "^3.4.8",
+    "moldy": "0.0.25",
+    "moldy-file-adapter": "0.0.10",
+    "sc-extendify": "0.0.0",
+    "sc-guid": "0.0.4"
+  }
 }

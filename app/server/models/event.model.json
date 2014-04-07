@@ -23,16 +23,27 @@
 		"guests": [{
 			"keyless": true,
 			"properties": {
-				"name": "string",
-				"email": "string",
+				"name": {
+					"type": "string",
+					"default": ""
+				},
+				"email": {
+					"type": "string",
+					"default": ""
+				},
 				"attending": {
 					"type": "boolean",
 					"default": false
+				},
+				"sort": {
+					"type": "number",
+					"default": 1e10
 				}
 			}
 		}],
 		"createdAt": {
-			"type": "string"
+			"type": "string",
+			"default": ""
 		}
 	}
 }

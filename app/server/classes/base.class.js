@@ -1,3 +1,3 @@
-var cmi = require('../cmi');
+var extendify = require('sc-extendify');
 
-module.exports = cmi.modules.klass(function () {});
+module.exports = extendify();
