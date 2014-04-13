@@ -34,7 +34,7 @@
     "cors": "^2.2.0",
     "express": "^3.4.8",
     "moldy": "0.0.25",
-    "moldy-file-adapter": "0.0.10",
+    "moldy-file-adapter": "0.0.11",
     "sc-extendify": "0.0.0",
     "sc-guid": "0.0.4"
   }
