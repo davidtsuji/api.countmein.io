@@ -47,3 +47,12 @@ or
 ```bash
 make clean
 ```
+
+## Deployment
+
+Assuming the server has your public key in the authorized list...
+
+```bash
+git remote add server git@countmein.io:api.countmein.io.git
+git push server master
+```
